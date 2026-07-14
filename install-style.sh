@@ -23,8 +23,8 @@ fi
 echo -e "${GREEN}Installing styles...${NC}"
 
 # Waybar
-sudo mkdir -p ~/.config/waybar
-sudo cat > ~/.config/waybar/style.css << 'EOF'
+mkdir -p ~/.config/waybar
+cat > ~/.config/waybar/style.css << 'EOF'
 * {
     font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
     font-size: 13px;
@@ -146,7 +146,7 @@ calendar view button:hover {
 #network { color: #89b4fa; }
 EOF
 
-sudo cat > ~/.config/waybar/config << 'EOF'
+cat > ~/.config/waybar/config << 'EOF'
 {
     "layer": "top",
     "position": "top",
@@ -192,8 +192,8 @@ sudo cat > ~/.config/waybar/config << 'EOF'
 EOF
 
 # Wofi
-sudo mkdir -p ~/.config/wofi
-sudo cat > ~/.config/wofi/style.css << 'EOF'
+mkdir -p ~/.config/wofi
+cat > ~/.config/wofi/style.css << 'EOF'
 /* БАЗОВЫЕ НАСТРОЙКИ ШРИФТОВ И СБРОС СТИЛЕЙ */
 * {
     font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", sans-serif;
@@ -295,7 +295,7 @@ button {
 }
 EOF
 
-sudo cat > ~/.config/wofi/config << 'EOF'
+cat > ~/.config/wofi/config << 'EOF'
 prompt=Search...
 show=drun
 show_all=false
