@@ -20,6 +20,11 @@ if [[ "$answer" != "y" && "$answer" != "Y" ]]; then
     exit 0
 fi
 
+echo -e "${GREEN}Installing fonts...${NC}"
+# Fonts
+sudo pacman -S ttf-jetbrains-mono-nerd --noconfirm
+sudo pacman -S ttf-font-awesome --noconfirm
+
 echo -e "${GREEN}Installing styles...${NC}"
 
 # Waybar
